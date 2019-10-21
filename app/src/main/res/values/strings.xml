@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">Team 19 Animation Challenge</string>
     <string name="next">Next</string>
+    <string name="item_description">Food description</string>
+    <string name="delete">delete the chosen item from cart</string>
+    <string name="add">add other items to cart</string>
+    <string name="thumbnail">food image</string>
+    <string name="menu_description">This rich and aromatic meal is one of the most delicious amongst the rice dishes. Tender morsels of steak cubes cooked in a beautifully thickened spicy gravy, served over fragrant basmati rice makes the meal one to savor.</string>
     <string name="Lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="mustard_description">This is so good we\'d be surprised if this chicken fillet recipe doesn\'t become a firm favourite. Save it to your My Good Food collection and enjoy.</string>
+    <string name="spicy_description">The potatoes in this recipe take on the spicy flavours beautifully - our idea of the perfect veggie supper</string>
+    <string name="biryani_description">A great one-pot rice dish that can still be served up a few days later, perfect for leftovers</string>
+    <string name="chicken_chasseur_description">This French bistro classic is easy to make at home and fabulous with creamy mash or crusty bread,3380,</string>
     <string name="chocolate_cake">Chocolate Cake</string>
     <string name="price">price</string>
     <string name="cake_price">$15.55</string>
@@ -18,4 +27,6 @@
     <string name="dessert_total_text">Total:</string>
     <string name="dessert_total_amount">$17.15</string>
     <string name="add_to_cart">Add to Cart</string>
+    <string name="food_type">FOOD</string>
+    <string name="hot_deals">Hot Deals</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.team19.animation;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -23,7 +24,9 @@ public class DessertDetailsActivity extends AppCompatActivity {
         toast.show();
     }
 
-    public void backButtonClicked(View view) {
+    public void openMainActivity(View view) {
         //Going back to the main activity
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

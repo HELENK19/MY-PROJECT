@@ -27,7 +27,7 @@
             android:layout_height="50dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:onClick="backButtonClicked"
+            android:onClick="openMainActivity"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/ic_arrow_back_black_24dp"
