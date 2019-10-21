@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/grey"
+    tools:context=".HomeActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/desserts_activity_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/restaurant" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/desserts_info_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/dessert_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="17dp"
+                android:text="Kula Restaurant"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider_1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/dessert_name_text"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="7dp"
+                android:background="@android:color/darker_gray" />
+
+            <ImageButton
+                android:id="@+id/location_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_1"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/ic_location_on_black_24dp"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/restaurant_Location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/location_icon"
+                android:layout_below="@+id/divider_1"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="6dp"
+                android:textSize="16sp"
+                android:text="Kona Mbaya Street, Mfangano Avenue" />
+            <ImageButton
+                android:id="@+id/time_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location_icon"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/ic_access_time_black_24dp"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/location_icon"
+                android:layout_below="@+id/restaurant_Location_text"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="Open 24/7" />
+            <ImageButton
+                android:id="@+id/phone_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time_icon"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/ic_phone_black_24dp"
+                android:background="@android:color/white"/>
+            <TextView
+                android:id="@+id/phone_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/location_icon"
+                android:layout_below="@+id/time_text"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="07012345678" />
+
+            <View
+                android:id="@+id/divider_2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/phone_icon"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/dessert_detail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_2"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="6dp"
+                android:text="@string/cake_detail_text" />
+
+            <View
+                android:id="@+id/divider_3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/dessert_detail_text"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="15dp"
+                android:background="@android:color/darker_gray" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/divider_3"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_1"
+                        android:layout_width="150dp"
+                        android:layout_height="250dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp"
+                        android:onClick="openMainDishesActivity">
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="175dp"
+                            android:layout_height="225dp"
+                            android:background="@android:color/holo_green_dark">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Main Dishes"
+                                android:textColor="@color/black"
+                                android:textSize="21sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="190dp"
+                                android:src="@drawable/main_dish"
+                                android:scaleType="center"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"/>
+
+                        </android.support.constraint.ConstraintLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_2"
+                        android:layout_width="150dp"
+                        android:layout_height="250dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="2dp"
+                        android:onClick="openDessertActivity">
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="175dp"
+                            android:layout_height="220dp"
+                            android:background="@android:color/holo_orange_dark">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Desserts"
+                                android:textColor="@color/black"
+                                android:textSize="21sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp"
+                                android:src="@drawable/dessert_2"
+                                android:scaleType="center"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"/>
+
+                        </android.support.constraint.ConstraintLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_3"
+                        android:layout_width="150dp"
+                        android:layout_height="250dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true"
+                        android:onClick="openDrinksActivity"
+                        app:contentPadding="2dp">
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="175dp"
+                            android:layout_height="250dp"
+                            android:background="@android:color/holo_blue_dark">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Drinks"
+                                android:textColor="@color/black"
+                                android:textSize="21sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:src="@drawable/drinks"
+                                android:scaleType="center"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"/>
+
+                        </android.support.constraint.ConstraintLayout>
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

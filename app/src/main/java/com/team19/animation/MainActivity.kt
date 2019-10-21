@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     }
     //When the back button in the desserts main activity is clicked
     fun goBack(view: View) {
-        //do something
+        val intent = Intent(this, HomeActivity::class.java)
+        startActivity(intent)
     }
 }
