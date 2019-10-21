@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainDishesDetailsActivity">
+
+    <ScrollView
+        android:layout_above="@+id/rela_bot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/biri" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_round">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_arrow_left"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="220dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/georgiab"
+                            android:text="Beef Biryani"
+                            android:layout_centerVertical="true"
+                            android:textColor="#36373b"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/price_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="price:"
+                            android:textSize="14sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/price_text"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:id="@+id/price_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$15.15"
+                            android:textColor="#36373b"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD"
+                        android:layout_margin="15dp"></View>
+
+
+                    <TextView
+                        android:id="@+id/con_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_description"
+                        android:textSize="14sp"
+                        android:ellipsize="end"
+                        android:textColor="#A3A3A3"
+                        android:lineSpacingExtra="5dp"
+                        android:maxLines="4"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD"
+                        android:layout_margin="15dp"></View>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp" >
+
+                        <EditText
+                            android:id="@+id/reviews_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:background="@drawable/edit_text_anim"
+                            android:padding="14dp"
+                            android:hint="Any request for the restaurant? Write them here..."
+                            android:textColor="#A3A3A3"
+                            android:layout_margin="5dp"/>
+
+                        <Button
+                            android:id="@+id/btn_send_request"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/reviews_txt"
+                            android:layout_alignEnd="@id/reviews_txt"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="0dp"
+                            android:padding="10dp"
+                            android:onClick="ifButtonClicked"
+                            android:fontFamily="@font/georgiab"
+                            android:textStyle="bold"
+                            android:background="@color/colorAnim"
+                            android:text="Send Request" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD"
+                        android:layout_margin="5dp"></View>
+
+
+                    <TextView
+                        android:id="@+id/billing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Billing Information"
+                        android:layout_centerVertical="true"
+                        android:textColor="#6a6b79"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/sub_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subtotal"
+
+                            android:textColor="#A3A3A3"
+                            android:textSize="14sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:id="@+id/sub_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="$15.15"
+                            android:textColor="#444444"
+                            android:textSize="14sp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/tax_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tax &amp; Fees"
+                            android:textSize="14sp"
+                            android:textColor="#A3A3A3"
+                            android:layout_marginRight="5dp"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:id="@+id/tax_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$2.00"
+                            android:textColor="#444444"
+                            android:textSize="14sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/deliv_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery"
+                            android:textSize="14sp"
+                            android:textColor="#A3A3A3"
+                            android:layout_marginRight="5dp"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:id="@+id/deliv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Free"
+                            android:textColor="#444444"
+                            android:textSize="14sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rela_bot"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#514c56">
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Total:"
+            android:layout_centerVertical="true"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="$17.15"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/total"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/add_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Add To Cart"
+            android:textStyle="bold"
+            android:background="#514c56"
+            android:textAllCaps="false"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</RelativeLayout>
