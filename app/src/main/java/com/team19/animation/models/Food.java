@@ -1,7 +1,5 @@
 package com.team19.animation.models;
 
-import java.net.URL;
-
 public class Food {
     private String name;
     private String description;
