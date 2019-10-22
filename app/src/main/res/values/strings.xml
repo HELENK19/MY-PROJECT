@@ -12,5 +12,7 @@
     <string name="spicy_description">The potatoes in this recipe take on the spicy flavours beautifully - our idea of the perfect veggie supper</string>
     <string name="biryani_description">A great one-pot rice dish that can still be served up a few days later, perfect for leftovers</string>
     <string name="chicken_chasseur_description">This French bistro classic is easy to make at home and fabulous with creamy mash or crusty bread,3380,</string>
-
+    <string name="display_price">Ksh.%1$s</string>
+    <string name="delivered_in">Delivered in %1$s</string>
+    <string name="show_cart">Show cart</string>
 </resources>

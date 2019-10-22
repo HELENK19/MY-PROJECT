@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    tools:context=".ui.DrinkDetailActivity">
+
+    <View
+        android:id="@+id/accent_view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorAccent" />
+
+    <ImageView
+        android:id="@+id/drink_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/accent_view"
+        android:background="@color/colorAccent"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/drink" />
+
+    <View
+        android:id="@+id/accent_view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/drink_image"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/drink_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accent_view2"
+        android:padding="4dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:text="Drink Name" />
+
+    <TextView
+        android:id="@+id/drink_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drink_name"
+        android:padding="4dp"
+        android:textSize="18sp"
+        tools:text="Drink Price" />
+
+    <TextView
+        android:id="@+id/drink_delivery_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drink_price"
+        android:padding="4dp"
+        android:textSize="18sp"
+        tools:text="Drink Delivery Time" />
+
+    <RatingBar
+        android:id="@+id/drink_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drink_delivery_time"
+        android:layout_centerHorizontal="true"
+        android:numStars="5"
+        android:padding="4dp" />
+
+    <ImageButton
+        android:id="@+id/drink_add_cart"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/drink_rating_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_add_shopping_cart" />
+
+</RelativeLayout>
